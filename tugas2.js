@@ -1,15 +1,15 @@
 var nama="Pororo";
-var umur=12;
+var umur=16;
 var dewasa=false;
 var skill=null;
-var admds=[3,1,1,2]
+var admds=[4,2,1,2]
 
 if(umur>15)
 dewasa=true;
 else
 dewasa=false;
 
-if(admds[0]>2)
+if(admds[0]>admds[1])
 skill='attacker';
 else
 skill='defender';
