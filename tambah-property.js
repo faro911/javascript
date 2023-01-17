@@ -10,6 +10,9 @@ function dataitem () {
     item1.tempa = 1;
         // menambah tempa pada item1
 
+    item1.unik = true;
+        // mengubah tipe data unik dari string ke bolean
+
 
     console.log(item1)
     console.log("Harga equip : GOLD",item1.price)
