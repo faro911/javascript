@@ -1,6 +1,6 @@
 function data() {
 
-    var siswa1 = 172;
+    var siswa1 = 160;
     var siswa2 = 173;
     var siswa3 = 160;
  
