@@ -3,7 +3,9 @@ function panggilshft() {
     console.log(kota)
     console.log("======")
 
-    var kota2 = kota.shift()
+    var kota2 = kota.shift() //shift untuk hapus data awal pada array
+    console.log(kota2)
+    var kota2 = kota.pop() //pop untuk hapus data akhir pada array, detail pnghpusan jkt, solo
     console.log(kota2)
 
     return kota
