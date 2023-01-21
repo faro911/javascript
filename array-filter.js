@@ -1,16 +1,8 @@
-let orang = [{
-    jeneng : "andy",
-    gender : "male"
-},
-{
-    jeneng : "cindy",
-    gender : "female"
-},
-{
-    jeneng : "Hila",
-    gender : "female"
-}
-];
+let orang = [
+    {jeneng : "andy",gender : "male"},
+    {jeneng : "cindy",gender : "female"},
+    {jeneng : "Hila",gender : "female"}
+    ];
 
 let female = orang.filter(orangs => {
     return orangs.gender === "female";
