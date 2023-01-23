@@ -4,7 +4,7 @@ function trakhir(){
     console.log(ope.lastIndexOf("bahasa"));//mencari dengan index
     console.log(ope.lastIndexOf("bahasa", 40));
 
-    //mater search
+    //materi search
     console.log(ope.search("bahasa")); // mencari berdasar kan reguler expresion
     console.log(ope.search(/bahasa/));
 }
