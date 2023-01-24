@@ -1,4 +1,3 @@
-function panggiljv(){
-    console.log("menuliskan code javascript secara internal");
+function panggilalert(){
+    alert("Sukses !")
 }
-panggiljv()
