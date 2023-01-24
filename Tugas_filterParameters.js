@@ -23,4 +23,4 @@ function panggilFilterParameters(value) {
    }
 
    panggilFilterParameters()
-   //TUGAS PARAMETER BELOM MENGERTI
+   //TUGAS PARAMETER FILTER untuk mencari negara di benua eropa dan asia
