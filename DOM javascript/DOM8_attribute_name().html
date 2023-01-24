@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atribute item</title>
+    <title>Atribute length()</title>
 </head>
 <body>
     <button type="button" onclick="tombol()" name="button">KLIK</button>
@@ -12,11 +12,9 @@
         <script type="text/javascript">
             function tombol(){
                 let a = document.getElementsByTagName("button")[0];
-                let b = a.attributes.item(0).name;
+                let b = a.attributes[1].name; //mengambil nama atribut pada index1 hasilnya onclick
                 document.getElementById("contoh").innerHTML = b;
             }
-            // merubah nilai diparagrap p menjadi atribut yang di select pada function a yang dikonfersi ke b, dengan pemanggilan index ke0 (mengambil atribut dalam tag button)
-             
         </script>
 </body>
 </html>
