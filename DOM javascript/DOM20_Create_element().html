@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create element</title>
+</head>
+<body>
+    
+    <button onclick="tombol()">KLIK</button><br>
+
+    <script>
+        function tombol(){
+            let a = document.createElement("button"); //membuat element baru
+            a.innerHTML = "TOMBOL"; //memberi nama pada vaiabel a
+            document.body.appendChild(a); //membuat anak pada body untuk menyelaraskan dengan pembuatan elemen button
+        }
+    </script>
+
+</body>
+</html>
