@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 42</title>
+    <style>
+        .gedeinfont {
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <p onmouseover="diatas(this)" onmouseout="dilepas(this)">dekatkan mouse mu untuk ubah warna</p>
+
+    <script>
+        function diatas(x){
+            x.style.color = "red";
+            let a = document.getElementsByTagName("p")[0];
+            let b = document.createAttribute("class");
+            b.value = "gedeinfont";
+            a.attributes.setNamedItem(b);
+        }
+        function dilepas(x){
+            x.style.color = "black";
+            let a = document.getElementsByTagName("p")[0];
+            a.attributes.removeNamedItem("class");
+
+        }
+    </script>
+</body>
+</html>

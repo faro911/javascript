@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy and paste</title>
+</head>
+<body>
+    <input type="text" oncopy="copytext()" value="Coba kamu copy text ini">
+    <input type="text" onpaste="pastetext()" value="Coba kamu paste text disini">
+
+    <p id="obeject_text"> </p>
+
+    
+    <script>
+        function copytext(){
+            document.getElementById("obeject_text").innerHTML = "Kamu telah mengcopy text"
+        }
+        function pastetext(){
+            document.getElementById("obeject_text").innerHTML = "Kamu telah mempaste text"
+        }
+        //melakaukan pemberitahuan ketrengan copy dan paste, sangat cocok untuk web yg menunjukan coding yang bisa dicopy codinganya untuk memberi isarat keberhasilan text di copy
+    </script>
+
+</body>
+</html>

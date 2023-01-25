@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>focus event</title>
+</head>
+<body>
+    
+    Masukan Nama Kamu : <input type="text" onfocus="sedang_focus(this)">
+
+    <p>Even ini akan berjalan saat text box mendapatkan focus</p>
+
+
+    <script>
+        function sedang_focus(x){
+            x.style.background = "lightblue";
+        }
+    </script>
+</body>
+</html>
