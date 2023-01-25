@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tugas 41</title>
+</head>
+<body>
+    <p>Pilih warna background</p>
+
+    <select id="mySelect" onchange="myFunction()">
+        <option value="red">abang</option>
+        <option value="blue">Biru</option>
+        <option value="yellow">kuneng</option>
+        <option value="white">Puteh</option>
+    </select>
+
+    <p>Saat kamu memilih warna, background akan berubah</p>
+    <script>
+        function myFunction(){
+            let a = document.getElementById("mySelect").value;
+            document.body.style.backgroundColor = a; //fungsi mengambil value pada option dengan fungsi getelementid, dan rubah background dengan variabel change color background
+        }
+    </script>
+</body>
+</html>
