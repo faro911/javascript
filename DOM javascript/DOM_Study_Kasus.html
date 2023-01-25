@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Kasus</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #c0c0c0;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: 300;
+      }
+
+      .tulisan_login {
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .kotak_login {
+        width: 350px;
+        background: white;
+
+        margin: 80px auto;
+        padding: 30px 20px;
+      }
+
+      label {
+        font-size: 11pt;
+      }
+
+      .form_login {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 10px;
+        font-size: 11pt;
+        margin-bottom: 20px;
+      }
+
+      .tombol_login {
+        background: #ff7f00;
+        color: white;
+        font-size: 11pt;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+      }
+      .tombol_lanjut {
+        background: red;
+        color: white;
+        font-size: 11pt;
+        width: 100%;
+        border: none;
+        border-radius: 3px;
+        padding: 10px 20px;
+      }
+      .link {
+        color: #232323;
+        text-decoration: none;
+        font-size: 10pt;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Membuat Form Login dengan Javascript</h1>
+
+    <div class="kotak_login">
+        <button onclick="buat_login()" id="x" class="tombol_lanjut">Klik Disini untuk Login</button>
+    </div>
+
+    <script>
+        function buat_login(){
+            let elem = document.getElementById("x");
+            elem.parentElement.removeChild(elem); // menghapus button tag
+
+            let p = document.createElement("p"); //membuat tag p yang berisikan class tulisan_login dan ber text silahkan login
+            p.className = "tulisan_login";
+            p.innerHTML = "Silahkan Login";
+
+            let elemendiv = document.getElementsByTagName("div")[0]; //membuat variabel untuk tagdiv
+            elemendiv.appendChild(p); //memasukan elemen p didalam elmendiv dengan appenchild
+            
+            // 2 list bwh tdk materi ttp berguna untk mnmbh class menjadi 2
+            const gel = document.querySelector(".tulisan_login"); //membuat var gel untuk penampunagn class pada tag p untuk ditmbhkn.
+            gel.classList.add("coba");//menambahkan coba pada class tag p (ini cuman uji coba tak ada fungsi css coba)
+            // 2 list atas tdk materi
+
+            let form = document.createElement("form"); //membuat variabel form 
+            elemendiv.appendChild(form); // menggabungkan elemen form ke dalam div dengan appendchild
+
+            let label = document.createElement("label"); //membuat variabel tag label
+            label.innerHTML ="Username"; //kalimat label username
+            form.appendChild(label); //label dimasukan didalam form
+
+            let input_username = document.createElement("input"); //membuat variabel tag input
+            input_username.type = "text"; //mabuat type ny input
+            input_username.name = "username"; //membuat namany input
+            input_username.classList = "form_login"; //membuat class nya input
+            form.appendChild(input_username);//label input_username dimasukan didalam form
+
+            let label2 = document.createElement("label"); //membuat variabel tag label
+            label2.innerHTML ="Password"; //kalimat label password
+            form.appendChild(label2); //label dimasukan didalam form
+
+            let input_password = document.createElement("input"); //membuat variabel tag input
+            input_password.type = "password"; //mabuat type ny input
+            input_password.name = "password"; //membuat namany input
+            input_password.classList = "form_login"; //membuat class nya input
+            form.appendChild(input_password);//label input_password dimasukan didalam form
+
+            let tombol = document.createElement("input"); //membuat variabel tag input
+            tombol.type = "submit"; //mabuat type ny input
+            tombol.classList = "tombol_login"; //membuat class nya input
+            form.appendChild(tombol);//label tombol dimasukan didalam form
+
+
+
+
+
+
+        }
+    </script>
+  </body>
+</html>
