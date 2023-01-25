@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p id="host"></p>
+
+        <button onclick="host_location()">Panggil Saya</button>
+
+        <script>
+            function host_location(){
+                let x = location.host; //mengambil host name kita
+                document.getElementById("host").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>

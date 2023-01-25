@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p id="hrep"></p>
+
+        <button onclick="liat_herf()">KLIK</button>
+
+        <script>
+            function liat_herf(){
+                let x = location.href; //memanggil seluruh url kita dengan lengkap di tag p
+                document.getElementById("hrep").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <p id="host_name"></p>
+
+        <button onclick="host_name()">Panggil Hostname</button>
+
+        <script>
+            function host_name(){
+                let x = location.hostname; //memanggil hostname di tag p
+                document.getElementById("host_name").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>

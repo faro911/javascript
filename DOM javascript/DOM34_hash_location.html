@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <p id="hash"></p>
+
+        <button onclick="hash_location()">Panggil Saya</button>
+
+        <script>
+            function hash_location(){
+                location.hash = "WHY"; //menambahkan hash ke id didalam tag p dan ke urlny
+                let x = "Sekarang anchornya " + location.hash;
+                document.getElementById("hash").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>
