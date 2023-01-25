@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>history back</title>
+</head>
+<body>
+    <button onclick="goback()">Kembali</button>
+    <button onclick="goforword()">Ke Depan</button>
+<br>
+    <button onclick="gob()">ke halaman 2 sebelumnya</button>
+    <button onclick="gof()">ke halaman 2 stelahnya</button>
+
+
+
+    <script>
+        function goback(){
+            window.history.back() //kembali ke halaman sebelumnya
+        }
+
+        function goforword(){
+            window.history.forward() //kembali ke halaman yang telah dibuka yang sebelumnyha di klik kembali
+        }
+
+        function gob(){
+            window.history.go(-2) //kembali ke halaman sebelumnya 2
+        }
+
+        function gof(){
+            window.history.go(2) //kembali ke halaman setelahnya 2
+        }
+    </script>
+</body>
+</html>
