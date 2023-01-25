@@ -1,0 +1,15 @@
+<html>
+    <body>
+        
+        <button onclick="iprem()">Buka Link</button>
+        <br><br>
+        <iframe src="" width="500" height="400"></iframe>
+        <iframe src="" width="500" height="400"></iframe>
+
+        <script>
+            function iprem(){
+                window.frames[0].location = "https://id.wikipedia.org/"; //array 0 menunjukan index ke 0 jika terdapat banyak iframe, location untuk mengetahui halaman yang dalam frame
+            }
+        </script>
+    </body>
+</html>

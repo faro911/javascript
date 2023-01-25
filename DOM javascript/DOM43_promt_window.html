@@ -1,0 +1,16 @@
+<html>
+    <body>
+        
+        <button onclick="promt()"> KLIK SAYA</button>
+        <p id="jawaban"></p>
+
+        <script>
+            function promt(){
+                let nama = prompt("Masukan Nama Kamu", "Nama"); //nama merupakan value dr masukan nama
+                if (nama != null){ //jika dimasukan ya akan mnghsilkan tulisan di tag p, jika dipilih tidak/cancel maka tdk trjdi ap2
+                    document.getElementById("jawaban").innerHTML = "Hallo " + nama + " Apa Kabar";
+                }
+            }
+        </script>
+    </body>
+</html>

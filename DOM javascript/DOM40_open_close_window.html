@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <button onclick="kunjung()">Kunjungi Saya</button><br><hr>
+        <button onclick="buka()">BUKA WINDOW</button>
+        <button onclick="tutup()">TUTUP WINDOW</button>
+
+        <script>
+            function kunjung(){
+                window.open("http://www.google.com");
+            } // mirip fungsi href tp ini bisa ditaruh di tombol untuk menuju web yang dituju
+
+            let myWindow;
+
+            function buka(){
+                myWindow = window.open("", "Faro911", "widht=500,height=400")
+                myWindow.document.writer("<p>Anda Berhasil Membuka Window </p>"); //membuka window baru dengan ukuran ditentukan
+            }
+
+            function tutup(){
+                myWindow.close(); //menutup widow yang dibuka
+            }
+        </script>
+    </body>
+</html>

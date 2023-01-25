@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <button onclick="fungsi()"> Klik Saya</button>
+        <p id="hasil"></p>
+
+        <script>
+            function fungsi(){
+                let text;
+                let r = confirm("Anda Yakin?");
+                if (r==true){
+                    text = "kamu telah yakin!";
+                }else{
+                    text = "kamu tidak yakin!"
+                }
+                document.getElementById("hasil").innerHTML = text;
+            } //memberi alret confirmasi jika pilih ya maka nilai akan true , jika tidak nilai akan else yang dihasilkan di tag p
+        </script>
+    </body>
+</html>
